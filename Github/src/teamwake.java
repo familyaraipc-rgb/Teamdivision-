@@ -60,7 +60,7 @@ public class teamwake {
 			} catch (Exception e1) {
 				System.err.println("エラーが発生しました！終了してエラー文を表示します．");
 				System.err.println(e1);
-			}
+			}//例外処理の終わり
 			menbar4++;
 			if (name[menbar4].equals("省略")) {
 				System.out.println("名前つけを省略します。");
@@ -68,6 +68,17 @@ public class teamwake {
 			}//if文の終わり
 		}//for文の終わり
 		System.out.println("では、チーム分けを始めます。しばらくお待ちください。");
+		boolean whilehantei =true;
+		while (whilehantei == true) {
+			int menbar5 = 0;
+			menbar5 = nannninka;
+			int naninka_hanbunn;
+			naninka_hanbunn= nannninka / 2;
+			int random1 = (int) (Math.random() *naninka_hanbunn);
+			if (menbar5 == 0) {
+				whilehantei = false;
+			}
+		}//while文の終わり
 	}//mainメソットの終わり
 	
 	public static int nextint () {
